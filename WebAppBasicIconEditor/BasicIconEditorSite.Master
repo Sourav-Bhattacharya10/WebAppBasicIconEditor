@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BasicIconEditorSite.master.cs" Inherits="WebAppBasicIconEditor.BasicIconEditorSite" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initialscale=1">
+
+   <link runat="server" rel="shortcut icon" href="~/favicon.ico" type="image/x-icon"/>
+   <link runat="server" rel="icon" href="~/favicon.ico" type="image/ico"/>
+
+    <title><%:Page.Title %></title>
+
+    <%--Bootstrap 4 CSS--%>
+    <link rel="stylesheet" href="Designs/Bootstrap4/css/bootstrap.min.css" />
+
+    <%--jQuery 3.2.1 JS--%>
+    <script type="text/javascript" src="Designs/jQuery321/jquery-3.2.1.slim.min.js"></script>
+
+    <%--Popper JS--%>
+    <script type="text/javascript" src="Designs/Popper/popper.min.js"></script>
+
+    <%--Bootstrap 4 JS--%>
+    <script type="text/javascript" src="Designs/Bootstrap4/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="Designs/CustomCss/BasicIconEditorSiteMaster.css" />
+
+    <script type="text/javascript" src="Designs/CustomJs/BasicIconEditorSiteMaster.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="padding-top:5rem;height:100%">
+
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top" style="box-shadow:0px 5px 5px 0px rgba(128, 128, 128, 0.80);">
+    	<a class="navbar-brand font-weight-bold" href="HomePage.aspx" style="color:white;">
+            <img src="Images/BasicIconEditorWhite.png" width="30" height="30"/>&nbsp;Basic Icon Editor</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a id="HomeLink" class="nav-item nav-link NI" href="HomePage.aspx" style="color:white;">Home <span class="sr-only">(current)</span></a>
+                <a id="AboutLink" class="nav-item nav-link NI" href="AboutPage.aspx" style="color:white;">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <form id="form1" runat="server">
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+    </div>
+
+    <nav class="navbar navbar-light bg-light fixed-bottom" style="box-shadow:0px -5px 5px 0px rgba(128, 128, 128, 0.80);">
+        Made by Sourav Bhattacharya
+    </nav>
+</body>
+</html>

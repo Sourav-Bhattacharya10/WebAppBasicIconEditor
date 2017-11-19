@@ -1,0 +1,11 @@
+﻿.BackgroundTransparent 
+{
+    position: absolute;
+    z-index: 1;
+}
+
+.RealImage 
+{
+    position: relative;
+    z-index: 2;
+}

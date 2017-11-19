@@ -1,0 +1,17 @@
+﻿html, body 
+{
+    height: 100%;
+}
+
+.active 
+{
+    border: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 3px 3px;
+}
+
+.NI:hover 
+{
+    font-weight: bold;
+}
